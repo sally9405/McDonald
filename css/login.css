@@ -1,0 +1,233 @@
+.center {
+    background: none;
+}
+header{
+    border-bottom: 1px solid #ccc;
+}
+.title {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.login {
+    position: relative;
+    margin: 5% 0 20%;
+}
+
+.login > div {
+    display: block;
+    float: left;
+    margin: 0 70px 0 150px;
+}
+
+.login p {
+    font-size: 18px;
+}
+
+.login span,
+label,
+a {
+    font-size: 15px;
+}
+
+.normal {
+    width: 400px;
+
+    /*    background-color: salmon;*/
+
+
+}
+
+.normal > div {
+    border-bottom: 1px solid #af0808;
+    position: relative;
+    padding: 20px;
+}
+
+.normal > div > div {
+    margin: 10px;
+}
+
+.normal label {
+    display: inline-block;
+    width: 80px;
+    text-indent: 0;
+    text-align: center;
+    line-height: 25px;
+}
+
+.normal input {
+    display: inline-block;
+    width: 120px;
+    height: 25px;
+    border: 1px solid #999;
+
+}
+
+/*로그인 버튼*/
+.normal > div > a {
+    display: block;
+    width: 100px;
+    height: 65px;
+    background: #af0808;
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 65px;
+    color: #f4f4f4;
+    /*    font-weight: bold;*/
+
+}
+/*버튼 3개*/
+.normal > a {
+    display: inline-block;
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin: 20px 19px 0;
+    border: 1px solid #af0808;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.easy {
+    /*    background-color:bisque;*/
+    
+}
+
+.easy > a {
+    display: block;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-indent: 70px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 20px;
+}
+
+.naver {
+    background: #1ec800;   
+}
+
+.kakao {
+    background: #ffeb00;
+}
+.easy img {
+    position: absolute;
+    top: 23%;
+    left: 10%;
+}
+
+
+
+@media screen and (max-width:767px){
+    .login{
+/*        background-color:antiquewhite;*/
+        position: relative;
+        height: 550px;
+    }
+    .login p{
+        text-align: center;
+    }
+    .login > div{
+        margin: 0;
+    }
+     .normal{
+/*        background-color: antiquewhite;*/
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+ 
+    }
+    .normal>div{
+        border:0;
+/**/
+/*        background-color: saddlebrown;*/
+    }
+    .normal>div>div{
+        margin: 5px 10px;
+    }
+    .normal > div > a{
+        top: 20px;
+        right: 10%;
+       
+    }
+    .normal > a {
+        margin : 0 0 0 30px;
+
+    }
+
+    .normal >a:last-of-type{
+        margin-right: 0px;
+    }
+
+    .easy{
+        width: 400px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+     
+    }
+    .easy>a{
+        width: 100%;
+        margin: 20px 0;
+        text-indent: 20px;
+        text-align: center;
+    }
+    .easy img{
+        left: 30%;
+    }
+    
+}
+@media screen and (max-width:450px){
+     .order {
+        right: 0;
+        width: 100px;
+        height: 40px;
+    }
+    .order>a>span{
+        display: none;
+    }
+    .normal{
+        width: 100%;
+    }
+    .easy{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+     
+    }
+}
+@media screen and (max-width:375px){
+    .normal label {
+        width: 55px;
+    }
+    .normal > div > a{
+        width: 80px;
+    }
+    .normal> a{
+        margin : 0 0 0 20px;
+    }
+}
+
+@media screen and (max-width:320px){
+.normal > div > a {
+    width: 70px;
+}
+    .easy img {
+    left: 25%;
+}
+    .normal> a {
+    margin: 0px 0 0 10px;
+}
+}

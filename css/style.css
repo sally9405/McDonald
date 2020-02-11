@@ -1,0 +1,949 @@
+.center {
+/*    background-color: rgba(0, 0, 0, 0.1);*/
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+input,
+.hamBtn,
+.closeBtn,
+.fixed,
+.navBg{
+    display: none;
+}
+
+
+label {
+    text-indent: -9999px;
+}
+
+/*header*/
+header {
+    min-width: 1200px;
+    border-top: 5px solid #af0808;
+    position: relative;
+    z-index: 10000;
+    height: 95px;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10002;
+
+}
+
+
+.subBg {
+    width: 100%;
+    height: 0px;
+    background: white;
+    opacity: 0;
+    position: absolute;
+    top: 78px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#nav {
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+}
+
+#nav > li {
+    float: left;
+    position: relative;
+    padding-bottom: 20px;
+   
+
+}
+
+#nav > li > a {
+    display: block;
+    width: 200px;
+    text-align: center;
+     font-weight: 600;
+}
+
+.order {
+    position: absolute;
+    right: 55px;
+    top: 45px;
+    width: 137px;
+    height: 37px;
+}
+
+.order > a {
+    background: url(../images/btn_delivery_1.png) no-repeat center 60%;
+    padding: 10px 20px;
+    color: #f4f4f4;
+}
+
+.sub {
+    background: white;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    transition: 0.3s;
+    padding-top: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 16px;
+
+}
+
+.sub > li {
+    line-height: 20px;
+    padding: 3px 0;
+}
+
+nav:hover .sub {
+    opacity: 1;
+    height: 290px;
+}
+
+nav:hover .subBg {
+    opacity: 1;
+    height: 295px;
+
+}
+
+.sub > li:hover > a {
+    color: #af0808;
+    font-weight: 400;
+}
+#container{
+    min-width: 1200px;
+}
+/*visual*/
+#visual { 
+    width: 100%;
+    overflow: hidden;
+    height: 452px;
+    position: relative;
+    z-index: 1000;
+}
+
+.banner {
+    width: 400%;
+}
+
+.banner > li {
+    float: left;
+    width: 25%;
+}
+
+.banner > li > a {
+    display: block;
+    height: 452px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: -9999px;
+}
+
+.banner > .b1 > a {
+    background-image: url(../images/banner1.jpg);
+}
+
+.banner > .b2 > a {
+    background-image: url(../images/banner2.jpg);
+}
+
+.cBtn{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cBtn>li{
+    float: left;
+    margin: 10px;
+}
+.cBtn>li> a {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 50%;
+    text-indent: -9999px;
+}
+.cBtn>li.active> a {
+    background: #af0808;
+ 
+}
+
+.contents {}
+
+.contents > .center {
+    position: relative;
+}
+
+.title {
+    font-size: 24px;
+    text-align: left;
+    margin: 50px 0 50px 50px;
+}
+
+.menu {
+
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+}
+
+.tabMenu {
+    position: absolute;
+    right: 85px;
+    top: 50px;
+}
+
+.tabMenu > li {
+    float: left;
+    margin-left: 10px;
+
+}
+
+.tabMenu > li:first-child > a {
+    color: #af0808;
+}
+
+.tabMenu > li:before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #222;
+    margin-right: 10px;
+}
+
+.tabMenu > li:first-child:before {
+    display: none;
+}
+
+.item {
+    width: 200%;
+}
+.item > li {
+    float: left;
+    width: 10.8%;
+    margin: 0 1%;
+}
+
+.item > li > a > * {
+    display: block;
+    text-align: center;
+}
+
+.item > li img {
+    width: 70%;
+    margin: 0 30px;
+}
+
+.item > li strong {
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 40px;
+}
+
+.item > li span {
+    line-height: 20px;
+}
+
+.mBtn {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 45%;
+}
+.mBtn>.mBtnL{
+    float: left;
+}
+.mBtn>.mBtnR{
+    float: right;
+}
+.mBtn>.mBtnL.active,
+.mBtn>.mBtnR.active{
+    display: none;
+}
+
+
+.delivery{}
+
+.delivery > ul > li {
+    float: left;
+    width: 600px;
+    height: 335px;
+    position: relative;
+}
+.delivery>ul>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.delivery>ul>li:first-child>a{
+    background: #b08972;
+}
+.delivery>ul>li:nth-child(2)>a{
+    background: #bc9b87;
+}
+.delivery li>a>*{
+    display: block;
+    
+}
+.delivery strong{
+    font-size: 30px;
+    color: white;
+    padding: 10% 0 5% 10%;
+}
+.delivery span{
+    font-size: 17px;
+    padding-left: 10%;
+    color: #efe1d9;
+
+}
+
+.delivery .arrow{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    z-index: 2;
+}
+.delivery .phone{
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+   
+}
+.delivery .ham{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    
+}
+.delivery .deli{
+    position: absolute;
+    right: 5%;
+    bottom: 25%;
+   
+}
+
+.store {
+    background: #eee;
+    /*    background: red;*/
+    margin: 50px 0;
+    padding: 45px 0;
+}
+
+.store > .title {
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.store > p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.store > .sStore {
+    width: 159px;
+    height: 47px;
+    margin: 0 auto;
+    line-height: 47px;
+    background: url(../images/btn_delivery.png) no-repeat center 35%;
+}
+
+.store > .sStore > a {
+    color: #f4f4f4;
+}
+
+
+.icon {
+    margin-top: 10px;
+}
+
+.icon > li {
+    float: left;
+    width: 126px;
+    margin-left: 95px;
+    text-align: center;
+}
+
+.icon > li:last-child {
+    margin-right: 95px;
+}
+
+.icon span {
+    display: block;
+    line-height: 20px;
+}
+
+.icon span:first-of-type {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #444;
+    font-weight: 600;
+}
+.icon .fade{
+    color: #222;
+}
+.service {
+    font-size: 15px;
+    font-weight: bolder;
+}
+.icon .service>.fade{
+    font-size: 15px;
+    display: inline-block;
+}
+
+.news {
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.nBanner {
+    width: 200%;
+    transition: 0.3s;
+}
+
+.nBanner > li {
+    width: 12.5%;
+    float: left;
+    margin: 0;
+}
+.nBanner img{
+        width: 100%;
+    }
+
+footer {
+    min-width:1200px;
+    background: #af0808;
+}
+
+footer > .center {
+    position: relative;
+}
+
+address {
+    padding: 50px 0 0 40px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #f4f4f4;
+}
+
+.footMenu {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
+.footMenu > li {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.footMenu > li:before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+    background: #f4f4f4;
+    margin-right: 5px;
+    position: relative;
+    top: -3px;
+}
+
+.footMenu > li:first-child:before {
+    display: none;
+}
+
+.footMenu > li > a {
+    color: #f4f4f4;
+}
+
+.corp {
+    position: absolute;
+    top: 87px;
+    right: 70px;
+}
+
+.corp > li {
+    float: left;
+    width: 75px;
+    height: 20px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 25px;
+}
+.corp>li:first-child{
+    margin-left: 0;
+}
+.sns {
+    padding: 25px 0 50px 40px;
+}
+
+.sns > li {
+    float: left;
+    text-indent: -9999px;
+    margin-right: 25px;
+}
+
+.sns > li > a {
+    display: block;
+    width: 33px;
+    height: 33px;
+    background-image: url(../images/img_sns.png);
+    background-repeat: no-repeat;
+}
+
+.sns > .sns2 > a {
+    background-position: -45px 0;
+}
+
+.sns > .sns3 > a {
+    background-position: -91px 0;
+}
+
+.sns > .sns4 > a {
+    background-position: -135px 0;
+}
+
+
+/* 모바일*/
+
+@media screen and (max-width:1024px) {
+
+    /*    제거   */
+/*    .cBtn,*/
+    .nBtn,
+    .p1 {
+        display: none;
+    }
+
+    /*    100%   */
+    .center,
+    .delivery > ul > li img {
+        width: 100%;
+    }
+
+    /*    보이기  */
+    /*    header   */
+
+    header {
+        min-width: 100%;
+        height: 65px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+     .navBg{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        left: -100%;
+
+    }
+
+    #nav {
+        position: fixed;
+        display: block;
+        width: 80%;
+        top: 69px;
+        left: -120%;
+    }
+
+/*
+    #nav:before {
+        content: "";
+        display: block;
+        width: 150%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+
+    }
+*/
+
+    #nav:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        position: absolute;
+
+    }
+
+    #nav > li {
+        background-color: white;
+        float: none;
+        padding: 5px 0;
+        position: relative;
+        border-bottom: 1px solid #ccc;
+    }
+
+    #nav > li > a {
+        display: block;
+        width: 100%;
+        background-image: url(../images/btn_down.svg);
+        background-repeat: no-repeat;
+        background-position: 80% center;
+        text-align: left;
+        margin: 20px 0 20px 50px;
+        box-sizing: border-box;
+    }
+    #nav>li.active>a{
+        background-image: url(../images/btn_up.svg);
+    }
+
+    .sub {
+/*        background-color: greenyellow;*/
+        position: static;
+        opacity: 1;
+        height: auto;
+        text-align: left;
+        padding: 10px 0 10px 80px;
+        display: none;
+        transition: none;
+    }
+
+    nav:hover .subBg {
+        opacity: 0;
+        height: 0;
+    }
+
+    nav:hover .sub {
+        opacity: 1;
+        height: auto;
+
+    }
+
+    nav:hover ~ #nav > li:hover ~ .sub {
+        opacity: 1;
+        height: 100px;
+    }
+
+    .hamBtn{
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+
+    .hamBtn>a{                         
+        display: block;
+        width: 26px;
+        height: 26px;
+        background: url(../images/btn_ham.png) no-repeat;
+    }
+    .hamBtn.active>a{
+        background: url(../images/btn_close1.png) no-repeat;
+    }
+
+    .order {
+        top: 25px;
+        right: 20px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+    #container{
+        min-width: 100%;
+    }
+    /*    visual
+    */
+    #visual {  
+        height: auto;
+    }
+
+    .banner > li > a {
+        /*        웹 너비:높이=160%:x*/
+        height: 38vw;
+        background-size: 160%;
+    }
+ 
+    /*    menu */
+    .title {
+        margin: 20px 0 10px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .menu{
+/*         padding-bottom: 2%;*/
+        margin-bottom:20px;    
+    }
+    .tabMenu {
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
+
+    .item {
+        width: 600%;
+    }
+
+    .item > li {
+        width: 16.666%;
+        margin: 0;
+    }
+
+    .item > li img {
+        width: 30%;
+        margin: 3% auto 0;
+    }
+
+    .item > li span {
+        line-height: 20px;
+    }
+
+
+
+/*    delivery*/
+    
+    .delivery>ul>li{
+        width: 100%;
+        height: 60%;
+    }
+  
+    .delivery strong{
+        padding: 5% 0 2% 10%;
+    }
+    .delivery span{
+        position: relative;
+        z-index: 3;
+    }
+    .delivery span:last-of-type{
+        padding-bottom: 5%;
+    }
+    .delivery .arrow{
+        width: 5%;
+        bottom: 12%;
+        left: 35%
+    }
+    .delivery .phone{
+        width: 15%;
+    }
+    .delivery .deli{
+        width: 25%;
+        bottom: 20%;
+    }
+    .delivery .ham{
+        height: 30%;
+    }
+   
+    /*    store   */
+    .store {
+        padding: 20px 0;
+    }
+
+    .store > p {
+        margin-bottom: 10px;
+    }
+
+    .store .sStore {
+        width: 120px;
+        background-size: 100%;
+        background-position: center 35%;
+    }
+    .icon .service>.fade{
+        display: none;
+    }
+    .icon {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .icon > li {
+        width: 18%;
+        float: none;
+        margin: 0 1%;
+    }
+
+    .icon > li img {
+        width: 70%;
+    }
+
+    .icon > li:last-child {
+        margin: 0 2%;
+    }
+
+    .icon span:first-of-type {
+        display: none;
+    }
+
+    .icon span {
+        margin: 10px;
+    }
+
+    .service {
+        font-size: 12px;
+    }
+
+    /*   news  */
+    /*   나중에 저절로 넘어가게 하기*/
+    /*  웹에서는 한화면에 li가 4개 보여야해서 800%에서 4로 나눠줘서200%
+    모바일에서는 2개가 보여야해서 800%에서 2로 나눠줘서 400%
+*/
+ 
+
+    .nBanner {
+        width: 400%;
+    }
+    .nBtn{
+        display: none;
+    }
+
+    /*    footer   */
+    footer {
+        min-width: 100%;
+        margin-bottom: 70px;
+    }
+
+    address {
+        padding: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footMenu {
+        position: static;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .footMenu > li {
+        float: none;
+    }
+
+    .corp {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .corp > li {
+        float: none;
+    }
+
+    .sns {
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sns > li {
+        float: none;
+    }
+
+    /*    fixed    */
+    .fixed {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background: #222;
+        padding-top: 10px;
+        z-index: 10000;
+        
+    }
+
+    .fixed > li {
+        text-align: center;
+    }
+
+    .fixed img {
+        display: block;
+        width: 30px;
+        margin-bottom: 10px;
+    }
+
+    .fixed > li:nth-child(3) img {
+        padding-left: 5px;
+    }
+
+    .fixed > li > a {
+        display: block;
+        color: #f4f4f4;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width:640px){
+        .delivery>ul>li{
+        width: 100%;
+        height: 50%;
+    }
+  
+  
+    .delivery .phone{
+        width: 20%;
+    }
+    .delivery .deli{
+        width: 50%;
+    }
+    .delivery .ham{
+        height: 30%;
+    }
+    .delivery .deli{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 500px){
+       .delivery .arrow{
+        width: 5%;
+        bottom: 10%;
+        left: 40%
+    }
+    .order {
+        right: 0;
+        width: 100px;
+        height: 40px;
+    }
+
+    .order>a>span{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 400px){
+        .service {
+        font-size: 10px;     
+    }
+        #nav > li > a {
+        background-position: 76% center;
+        background-size: 7%;
+     
+    }
+    #nav>li.active>a{
+        background-image: url(../images/btn_up.svg);
+    }
+    .order > a {
+        background-position: 50%;
+    }
+@media screen and (max-width: 375px){
+    .normal a {
+    margin: 0px 0 0 25px;
+}
+}
+
